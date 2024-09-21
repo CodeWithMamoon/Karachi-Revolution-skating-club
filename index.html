@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Karachi Revolution Roller Skating Club | Fun and Fitness on Wheels</title>
+    <meta name="description"
+        content="Join the Karachi Revolution Roller Skating Club for exciting skating classes, events, and a vibrant community. Sign up today for fun and fitness on wheels!">
+    <meta name="keywords" content="roller skating, Karachi, skating classes, fitness, events, Karachi Revolution Club">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #ff0000, #000000);
+    }
+
+    /* Light Mode */
+    body.light-mode {
+        background-color: #f4f4f4;
+        /* Light background color */
+        color: #333;
+        /* Dark text color */
+    }
+
+    body.light-mode .navbar {
+        background-color: #ffffff;
+        /* White background for navbar */
+        border-bottom: 2px solid #007bff;
+        /* Border color for navbar */
+    }
+
+    body.light-mode .navbar-nav .nav-link {
+        color: #007bff;
+        /* Dark blue color for nav links */
+    }
+
+    body.light-mode .navbar-nav .nav-link.active,
+    body.light-mode .navbar-nav .nav-link:hover {
+        color: #0056b3;
+        /* Darker blue color on hover */
+    }
+
+    body.light-mode .carousel-item img {
+        filter: brightness(100%);
+        /* Normal brightness for images */
+    }
+
+    body.light-mode .section {
+        background: #ffffff;
+        /* White background for sections */
+    }
+
+    /* Dark Mode */
+    body.dark-mode {
+        background-color: #333;
+        /* Dark background color */
+        color: #f4f4f4;
+        /* Light text color */
+    }
+
+    body.dark-mode .navbar {
+        background-color: #222;
+        /* Dark background for navbar */
+        border-bottom: 2px solid #ff5722;
+        /* Border color for navbar */
+    }
+
+    body.dark-mode .navbar-nav .nav-link {
+        color: #ff5722;
+        /* Light orange color for nav links */
+    }
+
+    body.dark-mode .navbar-nav .nav-link.active,
+    body.dark-mode .navbar-nav .nav-link:hover {
+        color: #e64a19;
+        /* Darker orange color on hover */
+    }
+
+    body.dark-mode .carousel-item img {
+        filter: brightness(50%);
+        /* Darker brightness for images */
+    }
+
+    body.dark-mode .section {
+        background: #444;
+        /* Dark background for sections */
+    }
+
+    .navbar {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid #007bff;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .hero_image img {
+        border-radius: 50%;
+        height: 50px;
+        margin-left: 5px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+
+    .navbar-nav {
+        margin: 10px;
+        margin-left: 50px;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        color: #007bff;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link:hover {
+        color: #0056b3;
+    }
+
+    .nav-number {
+        top: 25px;
+        right: 30px;
+        color: white;
+        padding: 5px 20px;
+        font-weight: bold;
+    }
+
+    .about-section {
+        background: linear-gradient(135deg, #f7f7f7, #fff);
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    .about-section h2 {
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .about-section p {
+        font-size: 18px;
+        color: #555;
+        max-width: 700px;
+        margin: 0 auto 40px;
+        line-height: 1.8;
+    }
+
+    .about-highlights {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .highlight {
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .highlight:hover {
+        transform: translateY(-10px);
+    }
+
+    .highlight i {
+        font-size: 40px;
+        color: #e91e63;
+        margin-bottom: 10px;
+    }
+
+    .highlight h3 {
+        font-size: 22px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .highlight p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+    }
+
+
+    .carousel-item img {
+        height: 90vh;
+        /* Smaller height */
+        object-fit: cover;
+        width: 100%;
+        filter: brightness(60%);
+        /* Darker image */
+    }
+
+    .event-card {
+        border-radius: 10px;
+        background-color: #f8f9fa;
+    }
+
+    .card-title {
+        color: #343a40;
+    }
+
+    .card-text {
+        color: #6c757d;
+    }
+
+    .shadow-sm {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .section {
+        padding: 4rem 1.5rem;
+        position: relative;
+        z-index: 2;
+        background: #ffffffcc;
+        /* Semi-transparent white for readability */
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        scroll-margin-top: 100px;
+    }
+
+    .section.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .section:nth-of-type(even) {
+        background-color: #f0f8ff;
+    }
+
+    .section:nth-of-type(odd) {
+        background-color: #e6f2ff;
+    }
+
+    .event-card,
+    .class-card {
+        border-radius: 0.375rem;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .event-card img,
+    .class-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        background-color: #f8f9fa;
+    }
+
+    .event-card:hover,
+    .class-card:hover {
+        transform: scale(1.05);
+        /* Zoom effect */
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    .contact-form {
+        padding: 4rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form .map {
+        width: 100%;
+        max-width: 600px;
+        height: 300px;
+        border: 2px solid #ddd;
+        margin-bottom: 1rem;
+    }
+
+
+    .form-container {
+        background: #ffffff;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        margin: auto;
+        max-width: 600px;
+    }
+
+    .form-label {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .form-control.form-input {
+        border-radius: 0.375rem;
+        border: 1px solid #ced4da;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-control.form-input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 0.375rem;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-lg {
+        padding: 0.75rem 2rem;
+    }
+
+    .form-control.form-input {
+        border-radius: 0.375rem;
+        border: 1px solid #ced4da;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        width: 100%;
+        /* Ensure full width */
+    }
+
+    .contact-form .form-container {
+        padding: 2rem;
+        width: 100%;
+        /* Full width */
+        max-width: 1000px;
+        /* Maximum width */
+        margin: auto;
+        /* Center align */
+    }
+
+    .carousel-caption {
+        bottom: 20%;
+        text-align: center;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .social-icons {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .social-icons li {
+        display: inline-block;
+    }
+
+    .social-icons li a {
+        color: white;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+    }
+
+    .social-icons li a:hover {
+        color: #f0f0f0;
+    }
+
+    footer {
+        background-color: #222;
+        /* Dark background for the footer */
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer .social-icons {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    footer .social-icons li {
+        margin: 0 10px;
+    }
+
+    .whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25D366;
+        /* WhatsApp color */
+        border-radius: 50%;
+        padding: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s;
+        z-index: 1000;
+        /* Ensure it's on top */
+    }
+
+    .whatsapp-icon.scale {
+        transform: scale(1.2);
+        /* Scale effect */
+    }
+
+    .developer-credit {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1rem;
+        color: #fff;
+        /* Change based on your footer background */
+    }
+
+    .developer-credit a {
+        color: #ff5722;
+        /* Customize link color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .developer-credit a:hover {
+        color: #e64a19;
+        /* Darker shade on hover */
+    }
+
+
+    @keyframes vibrate {
+        0% {
+            transform: translate(0);
+        }
+
+        20% {
+            transform: translate(-2px, 2px);
+        }
+
+        40% {
+            transform: translate(2px, 2px);
+        }
+
+        60% {
+            transform: translate(-2px, -2px);
+        }
+
+        80% {
+            transform: translate(2px, -2px);
+        }
+
+        100% {
+            transform: translate(0);
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .carousel-caption h1 {
+            font-size: 2rem;
+        }
+
+        .social-icons li a {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .carousel-caption h1 {
+            font-size: 1.5rem;
+        }
+
+        .social-icons li a {
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="hero_image animate__animated animate__bounceInLeft">
+            <img src="assets\logo.png" alt="logo">
+        </div>
+        <a class="navbar-brand" href="#">Karachi Revolution Club</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#classes">Classes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#shoes">Shoes Selling</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#timing">Timings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="modeToggle"><i class="fas fa-moon"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel Hero Section -->
+    <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Welcome to Karachi Revolution</h1>
+                    <!-- Social icons -->
+                    <ul class="social-icons">
+                        <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.facebook.com/ImranSkatingAcademy/" target="_blank"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/karachi_revolution_skatingclub/?locale=it_IT&img_index=1"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Welcome to Karachi Revolution</h1>
+                    <ul class="social-icons">
+                        <li><a href="https://api.whatsapp.com/send/?phone=923030223440&text&type=phone_number&app_absent=0"
+                                target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.facebook.com/ImranSkatingAcademy/" target="_blank"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/karachi_revolution_skatingclub/?locale=it_IT&img_index=1"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/3.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Welcome to Karachi Revolution</h1>
+                    <ul class="social-icons">
+                        <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselHero" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselHero" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Karachi Revolution</h2>
+            <p>
+                Karachi Revolution Roller Skating Club is dedicated to promoting the sport of roller skating in Karachi.
+                We provide a fun, safe, and inclusive environment for skaters of all levels to improve their skills,
+                meet new friends, and participate in exciting events. Whether you're a beginner or a seasoned skater,
+                our club has something to offer everyone. Join us and be part of the revolution!
+            </p>
+            <div class="about-highlights">
+                <div class="highlight">
+                    <i class="fas fa-skating"></i>
+                    <h3>Passionate Community</h3>
+                    <p>Our club is built on the passion and enthusiasm of our members. We foster a supportive and
+                        energetic community where everyone is welcome.</p>
+                </div>
+                <div class="highlight">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Skating Events</h3>
+                    <p>From casual meetups to competitive events, we organize a variety of skating activities that cater
+                        to all interests and skill levels.</p>
+                </div>
+                <div class="highlight">
+                    <i class="fas fa-heart"></i>
+                    <h3>Inclusive Environment</h3>
+                    <p>We believe in inclusivity and diversity. Our club welcomes skaters of all ages, backgrounds, and
+                        abilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Classes Section -->
+    <div id="classes" class="section">
+        <div class="container">
+            <h2 class="text-center">Our Classes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card class-card mb-4">
+                        <img src="assets/class.png" class="card-img-top" alt="Beginner Class">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Beginner Class</b></h5>
+                            <p class="card-text">Perfect for those who are new to roller skating. Learn the basics in a
+                                fun and safe environment.</p>
+                            <p class="card-text"><strong>Timings:</strong> Mon, Wed, Fri - 5:00 PM to 6:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card class-card mb-4">
+                        <img src="assets/class 2.png" class="card-img-top" alt="Intermediate Class">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Intermediate Class</b></h5><br>
+                            <p class="card-text">For those who have mastered the basics and want to improve their skills
+                                and techniques.</p><br>
+                            <p class="card-text"><strong>Timings:</strong> Tue, Thu - 5:00 PM to 6:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card class-card mb-4">
+                        <img src="assets/class 1.png" class="card-img-top" alt="Advanced Class">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Advanced Class</b></h5><br>
+                            <p class="card-text">For advanced skaters looking to refine their techniques and learn new
+                                tricks.</p><br>
+                            <p class="card-text"><strong>Timings:</strong> Sat, Sun - 4:00 PM to 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events Section -->
+    <div id="events" class="section">
+        <div class="container">
+            <h2 class="text-center">Events</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card event-card mb-4">
+                        <img src="assets/event 1.png" class="card-img-top" alt="Event 1">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Skating Competition</b></h5>
+                            <p class="card-text">Join us for an exciting skating competition. Show off your skills and
+                                compete for fantastic prizes!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card mb-4">
+                        <img src="assets/event 2.png" class="card-img-top" alt="Event 2">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Roller Skating Workshop</b></h5>
+                            <p class="card-text">A workshop to help skaters of all levels improve their techniques and
+                                learn new skills.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card mb-4">
+                        <img src="assets/event 3.png" class="card-img-top" alt="Event 3">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Family Skating Day</b></h5>
+                            <p class="card-text">A fun-filled day for the whole family with games, activities, and
+                                skating <br>sessions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card mb-4">
+                        <img src="assets/event 4.png" class="card-img-top" alt="Event 4">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Beginner’s Skating Lessons</b></h5>
+                            <p class="card-text">Perfect for those new to skating. Learn the basics in a friendly and
+                                supportive environment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card mb-4">
+                        <img src="assets/event 5.png" class="card-img-top" alt="Event 5">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Advanced Tricks Workshop</b></h5>
+                            <p class="card-text">Take your skating skills to the next level with this workshop focused
+                                on advanced tricks and techniques.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card mb-4">
+                        <img src="assets/event 6.png" class="card-img-top" alt="Event 6">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Community Skating Parade</b></h5>
+                            <p class="card-text">Join our community for a vibrant skating parade through the park. All
+                                ages and skill levels are welcome!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shoes Selling Section -->
+    <div id="shoes" class="section">
+        <div class="container">
+            <h2 class="text-center">Buy Skits Now</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card event-card mb-4">
+                        <img src="assets/skits 1.png" class="card-img-top" alt="Event 1">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Skating Competition</b></h5>
+                            <p class="card-text">Join us for an exciting skating competition. Show off your skills and
+                                compete for fantastic prizes!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card mb-4">
+                        <img src="assets/skits 2.png" class="card-img-top" alt="Event 2">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Roller Skating Workshop</b></h5>
+                            <p class="card-text">A workshop to help skaters of all levels improve their techniques and
+                                learn new skills.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card mb-4">
+                        <img src="assets/skits 3.png" class="card-img-top" alt="Event 3">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Family Skating Day</b></h5>
+                            <p class="card-text">A fun-filled day for the whole family with games, activities, and
+                                skating <br>sessions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card mb-4">
+                        <img src="assets/skits 4.png" class="card-img-top" alt="Skating Event 4">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Beginner Skating Class</b></h5>
+                            <p class="card-text">Perfect for newcomers! Learn the basics of skating with our expert
+                                instructors.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card mb-4">
+                        <img src="assets/skits 5.png" class="card-img-top" alt="Skating Event 5">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Skateboard Tricks Session</b></h5>
+                            <p class="card-text">Discover new tricks and techniques with our skateboard tricks session.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card mb-4">
+                        <img src="assets/skits 6.png" class="card-img-top" alt="Skating Event 6">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Kids Skating Party</b></h5>
+                            <p class="card-text">A special skating party designed for kids with lots of fun activities
+                                and games!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timing Section -->
+    <div id="timing" class="section">
+        <div class="container">
+            <h2 class="text-center">Timings</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card event-card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold text-center">Clifton Block-8 Club Details</h4>
+                            <hr>
+                            <h5 class="card-title text-muted"><b>Days:</b></h5>
+                            <p class="card-text">Tue, Wed, Thu, Fri, Sat, Sun</p>
+                            <h5 class="card-title text-muted"><b>Timings:</b></h5>
+                            <ul class="list-unstyled">
+                                <li class="card-text">Slot-1 (5:30 to 6:30 pm)</li>
+                                <li class="card-text">Slot-2 (6:30 to 7:30 pm)</li>
+                                <li class="card-text">Slot-3 (7:30 to 8:30 pm)</li>
+                            </ul>
+                            <h5 class="card-title text-muted"><b>(Above 4 Years Can Join)</b></h5>
+                            <h5 class="card-title text-muted"><b>Location:</b></h5>
+                            <p class="card-text">Cantonment Board Family Park Block-8 Clifton (Opposite Bacha Party)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold text-center">NHS Clifton Branch Details</h4>
+                            <hr>
+                            <h5 class="card-title text-muted"><b>Days:</b></h5>
+                            <p class="card-text">Monday, Tuesday, Wednesday</p><br>
+                            <h5 class="card-title text-muted"><b>Timing:</b></h5>
+                            <ul class="list-unstyled">
+                                <li class="card-text">6:00 to 7:00 pm</li>
+                            </ul><br>
+                            <h5 class="card-title text-muted"><b>(Above 4 Years Can Join)</b></h5>
+                            <h5 class="card-title text-muted"><b>Location:</b></h5>
+                            <p class="card-text">Skating Arena, Park 7,
+                                Navy Housing Scheme Clifton.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold text-center">Garden East Club Details</h4>
+                            <hr>
+                            <h5 class="card-title text-muted"><b>Weekends program
+                                </b></h5>
+                            <p class="card-text">Friday, Saturday, Sunday</p>
+                            <h5 class="card-title text-muted"><b>Timings:</b></h5>
+                            <ul class="list-unstyled">
+                                <li class="card-text">Slot-1 (5:30 to 6:30 pm)</li>
+                                <li class="card-text">Slot-2 (6:30 to 7:30 pm)</li>
+                                <li class="card-text">Slot-3 (7:30 to 8:30 pm)</li>
+                            </ul>
+                            <h5 class="card-title text-muted"><b>(Above 4 years kids can join)</b></h5>
+                            <h5 class="card-title text-muted"><b>Location:</b></h5>
+                            <p class="card-text">Aga Khan Women's Park near Ismaili Jamat Khana Garden East, </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact-form">
+        <div class="form-container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form action="https://formspree.io/f/xyzgjwgp" method="post">
+
+                <div class="mb-4">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control form-input" id="name" name="name"
+                        placeholder="Enter your name" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control form-input" id="email" name="email"
+                        placeholder="Enter your email" required>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control form-input" id="phone" name="phone"
+                        placeholder="Enter your phone number">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control form-input" id="message" name="message" rows="5"
+                        placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Karachi Revolution Roller Skating Club. All rights reserved.</p>
+        <div class="developer-credit">
+            <p>Website developed by <strong><a
+                        href="https://api.whatsapp.com/send/?phone=923152831169&text&type=phone_number&app_absent=0"
+                        target="_blank">M.Mamoon</a></strong>.
+                Get in touch for exceptional web development services!</p>
+        </div>
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/ImranSkatingAcademy/" target="_blank"><i
+                        class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/karachi_revolution_skatingclub/?locale=it_IT&img_index=1"
+                    target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="mailto:Imranrevolution11@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <span class="nav-number"><i class="fa fa-phone" aria-hidden="true"></i> +92 303 0223440</span>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://api.whatsapp.com/send/?phone=923030223440&text&type=phone_number&app_absent=0" target="_blank"
+        class="whatsapp-icon" id="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script>
+        // Scroll animation
+        const sections = document.querySelectorAll('.section');
+        const options = {
+            root: null,
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const modeToggle = document.getElementById('modeToggle');
+            const body = document.body;
+
+            // Load the saved mode from localStorage
+            const savedMode = localStorage.getItem('mode') || 'dark-mode';
+            body.classList.add(savedMode);
+
+            modeToggle.addEventListener('click', function () {
+                if (body.classList.contains('dark-mode')) {
+                    body.classList.remove('dark-mode');
+                    body.classList.add('light-mode');
+                    localStorage.setItem('mode', 'light-mode');
+                    modeToggle.innerHTML = '<i class="fas fa-sun"></i>'; // Change icon for light mode
+                } else {
+                    body.classList.remove('light-mode');
+                    body.classList.add('dark-mode');
+                    localStorage.setItem('mode', 'dark-mode');
+                    modeToggle.innerHTML = '<i class="fas fa-moon"></i>'; // Change icon for dark mode
+                }
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const whatsappIcon = document.getElementById('whatsapp-icon');
+
+            // Function to scale and vibrate the icon
+            function triggerVibration() {
+                whatsappIcon.classList.add('scale');
+
+                // Remove the scale effect after 1 second
+                setTimeout(() => {
+                    whatsappIcon.classList.remove('scale');
+                }, 1000);
+
+                // Start the vibration effect
+                whatsappIcon.style.animation = 'vibrate 0.5s infinite alternate';
+
+                // Stop the vibration after 2 seconds
+                setTimeout(() => {
+                    whatsappIcon.style.animation = '';
+                }, 2000); // 4 iterations of 0.5s (2 seconds total)
+            }
+
+            // Trigger vibration every 20 seconds
+            setInterval(triggerVibration, 20000); // 20 seconds in milliseconds
+        });
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Karachi Revolution Roller Skating Club",
+          "url": "https://yourwebsite.com",
+          "logo": "https://yourwebsite.com/assets/logo.png",
+          "sameAs": [
+            "https://www.facebook.com/ImranSkatingAcademy/",
+            "https://www.instagram.com/karachi_revolution_skatingclub/"
+          ]
+        }
+        </script>
+
+</body>
+
+</html>
