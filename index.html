@@ -260,15 +260,19 @@
     .event-card img,
     .class-card img {
         width: 100%;
-        height: 200px;
+        height: auto;
         object-fit: contain;
         background-color: #f8f9fa;
+        display: block;
+    }
+    .card {
+        overflow: hidden; 
     }
 
     .event-card:hover,
     .class-card:hover {
         transform: scale(1.05);
-        /* Zoom effect */
+        transition: transform 0.3s ease;
     }
 
     .btn-primary {
@@ -422,38 +426,44 @@
         bottom: 20px;
         right: 20px;
         background-color: #25D366;
-        /* WhatsApp color */
         border-radius: 50%;
-        padding: 10px;
+        padding: 15px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         transition: transform 0.2s;
         z-index: 1000;
-        /* Ensure it's on top */
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
     }
-
+    
+    .whatsapp-icon i {
+        font-size: 32px;
+        color: white;
+    }
+    
     .whatsapp-icon.scale {
-        transform: scale(1.2);
-        /* Scale effect */
+        transform: scale(1.5);
     }
+    
 
     .developer-credit {
         text-align: center;
         margin-top: 20px;
         font-size: 1rem;
         color: #fff;
-        /* Change based on your footer background */
     }
 
     .developer-credit a {
         color: #ff5722;
-        /* Customize link color */
         text-decoration: none;
         transition: color 0.3s;
     }
 
     .developer-credit a:hover {
         color: #e64a19;
-        /* Darker shade on hover */
     }
 
 
@@ -553,10 +563,10 @@
             <div class="carousel-item active">
                 <img src="assets/1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>Welcome to Karachi Revolution</h1>
+                    <h1>Welcome to Karachi Revolution Club</h1>
                     <!-- Social icons -->
                     <ul class="social-icons">
-                        <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="ttps://api.whatsapp.com/send/?phone=923030223440&text&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
                         <li><a href="https://www.facebook.com/ImranSkatingAcademy/" target="_blank"><i
                                     class="fab fa-facebook"></i></a></li>
                         <li><a href="https://www.instagram.com/karachi_revolution_skatingclub/?locale=it_IT&img_index=1"
@@ -639,7 +649,7 @@
     <!-- Classes Section -->
     <div id="classes" class="section">
         <div class="container">
-            <h2 class="text-center">Our Classes</h2>
+            <h2 class="text-center mb-4">Our Classes</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card class-card mb-4">
@@ -681,7 +691,7 @@
     <!-- Events Section -->
     <div id="events" class="section">
         <div class="container">
-            <h2 class="text-center">Events</h2>
+            <h2 class="text-center mb-4">Events</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card event-card mb-4">
@@ -695,7 +705,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card event-card mb-4">
-                        <img src="assets/event 2.png" class="card-img-top" alt="Event 2">
+                        <img src="assets/roll.jpeg" class="card-img-top" alt="Event 2">
                         <div class="card-body">
                             <h5 class="card-title"><b>Roller Skating Workshop</b></h5>
                             <p class="card-text">A workshop to help skaters of all levels improve their techniques and
@@ -703,7 +713,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <div class="card event-card mb-4">
                         <img src="assets/event 3.png" class="card-img-top" alt="Event 3">
                         <div class="card-body">
@@ -712,20 +722,19 @@
                                 skating <br>sessions.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-md-4">
                     <div class="card event-card mb-4">
                         <img src="assets/event 4.png" class="card-img-top" alt="Event 4">
                         <div class="card-body">
-                            <h5 class="card-title"><b>Beginner’s Skating Lessons</b></h5>
-                            <p class="card-text">Perfect for those new to skating. Learn the basics in a friendly and
-                                supportive environment.</p>
+                            <h5 class="card-title"><b>Roll Ball Classes</b></h5>
+                            <p class="card-text">Roll Ball is a game played between two teams and is a unique combination of roller skates, basketball, handball, and throwball. It is played on "roller shoes" with each team consisting of twelve players, six on the field, and six in reserve.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card event-card mb-4">
-                        <img src="assets/event 5.png" class="card-img-top" alt="Event 5">
+                        <img src="assets/advacne.jpeg" class="card-img-top" alt="Event 5">
                         <div class="card-body">
                             <h5 class="card-title"><b>Advanced Tricks Workshop</b></h5>
                             <p class="card-text">Take your skating skills to the next level with this workshop focused
@@ -735,7 +744,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card event-card mb-4">
-                        <img src="assets/event 6.png" class="card-img-top" alt="Event 6">
+                        <img src="assets/cummnaity.jpeg" class="card-img-top" alt="Event 6">
                         <div class="card-body">
                             <h5 class="card-title"><b>Community Skating Parade</b></h5>
                             <p class="card-text">Join our community for a vibrant skating parade through the park. All
@@ -749,29 +758,27 @@
     <!-- Shoes Selling Section -->
     <div id="shoes" class="section">
         <div class="container">
-            <h2 class="text-center">Buy Skits Now</h2>
+            <h2 class="text-center mb-4">Buy Skating Tools Now</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card event-card mb-4">
-                        <img src="assets/skits 1.png" class="card-img-top" alt="Event 1">
+                        <img src="assets/skits 2.png" class="card-img-top" alt="Event 1">
                         <div class="card-body">
-                            <h5 class="card-title"><b>Skating Competition</b></h5>
-                            <p class="card-text">Join us for an exciting skating competition. Show off your skills and
-                                compete for fantastic prizes!</p>
+                            <h5 class="card-title"><b>Beginner Skates</b></h5>
+                            <p class="card-text">Inliners for beginners are always delivered with a brake and have smaller wheels for an easier start. This results in a flatter and safer center of gravity with which you have a more stable stand on the skates and maktes the first steps easier.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card event-card mb-4">
-                        <img src="assets/skits 2.png" class="card-img-top" alt="Event 2">
+                        <img src="assets/skits 5.png" class="card-img-top" alt="Event 2">
                         <div class="card-body">
-                            <h5 class="card-title"><b>Roller Skating Workshop</b></h5>
-                            <p class="card-text">A workshop to help skaters of all levels improve their techniques and
-                                learn new skills.</p>
+                            <h5 class="card-title"><b>Intermediate Skates</b></h5>
+                            <p class="card-text">Intermediate inline skates offer a balance of stability, speed, and agility for recreational to advanced skaters.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <div class="card event-card mb-4">
                         <img src="assets/skits 3.png" class="card-img-top" alt="Event 3">
                         <div class="card-body">
@@ -780,28 +787,27 @@
                                 skating <br>sessions.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-md-4">
                     <div class="card event-card mb-4">
-                        <img src="assets/skits 4.png" class="card-img-top" alt="Skating Event 4">
+                        <img src="assets/safety.jpeg" class="card-img-top" alt="Skating Event 4">
                         <div class="card-body">
-                            <h5 class="card-title"><b>Beginner Skating Class</b></h5>
-                            <p class="card-text">Perfect for newcomers! Learn the basics of skating with our expert
-                                instructors.</p>
+                            <h5 class="card-title"><b>Safety Kits</b></h5>
+                            <p class="card-text">Hand pads, knee pads, elbow pads</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card event-card mb-4">
-                        <img src="assets/skits 5.png" class="card-img-top" alt="Skating Event 5">
+                        <img src="assets/halmet.jpeg" class="card-img-top" alt="Skating Event 5">
                         <div class="card-body">
-                            <h5 class="card-title"><b>Skateboard Tricks Session</b></h5>
-                            <p class="card-text">Discover new tricks and techniques with our skateboard tricks session.
+                            <h5 class="card-title"><b>Helmets</b></h5>
+                            <p class="card-text">Helmets are designed to protect the most important part of your body. That brain of yours that likes to skate is very important to us all so be sure to keep it safe.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <div class="card event-card mb-4">
                         <img src="assets/skits 6.png" class="card-img-top" alt="Skating Event 6">
                         <div class="card-body">
@@ -810,7 +816,7 @@
                                 and games!</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -818,7 +824,7 @@
     <!-- Timing Section -->
     <div id="timing" class="section">
         <div class="container">
-            <h2 class="text-center">Timings</h2>
+            <h2 class="text-center mb-4">Our Branches & Details </h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card event-card mb-4 shadow-sm">
