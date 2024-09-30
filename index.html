@@ -20,7 +20,50 @@
         padding: 0;
         background: linear-gradient(to right, #ff0000, #000000);
     }
-
+    .fixed-header {
+        position: fixed;
+        top: 20px; /* Adjust as necessary */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%; /* Adjust width as needed */
+        background: #ffffffe6; /* Semi-transparent background */
+        padding: 10px;
+        border-radius: 8px; /* Optional: rounded corners for header */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth */
+        z-index: 1000; /* Ensure it appears above other content */
+    }
+    
+    .section {
+        padding-top: 80px; /* Prevent content overlap with fixed header */
+    }
+    
+    .head-img {
+        width: 100px; /* Fixed size for head image */
+        height: auto;
+        border-radius: 50%; /* Make head image circular */
+    }
+    
+    .card {
+        border: none; /* Optional: removes card border */
+    }
+    
+    .instructor-img {
+        width: 100px; /* Circular image size */
+        height: 100px; /* Circular image size */
+        border-radius: 50%; /* Make image circular */
+        object-fit: cover; /* Ensures the image covers the area */
+        margin: 0 auto; /* Center the image */
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 576px) {
+        .instructor-img {
+            width: 80px; /* Adjust for smaller screens */
+            height: 80px; /* Adjust for smaller screens */
+        }
+    }
+    
+    
     /* Light Mode */
     body.light-mode {
         background-color: #f4f4f4;
@@ -199,10 +242,10 @@
 
 
     .carousel-item img {
-        height: 90vh;
+        height: 45vh;
         /* Smaller height */
         object-fit: cover;
-        width: 100%;
+        width: 96%;
         filter: brightness(60%);
         /* Darker image */
     }
@@ -705,7 +748,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card event-card mb-4">
-                        <img src="assets/roll.jpeg" class="card-img-top" alt="Event 2">
+                        <img src="assets/cummnaity.jpeg" class="card-img-top" alt="Event 2">
                         <div class="card-body">
                             <h5 class="card-title"><b>Roller Skating Workshop</b></h5>
                             <p class="card-text">A workshop to help skaters of all levels improve their techniques and
@@ -713,19 +756,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-4">
-                    <div class="card event-card mb-4">
-                        <img src="assets/event 3.png" class="card-img-top" alt="Event 3">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Family Skating Day</b></h5>
-                            <p class="card-text">A fun-filled day for the whole family with games, activities, and
-                                skating <br>sessions.</p>
-                        </div>
-                    </div>
-                </div> -->
+                
                 <div class="col-md-4">
                     <div class="card event-card mb-4">
-                        <img src="assets/event 4.png" class="card-img-top" alt="Event 4">
+                        <img src="assets/roll.jpeg" class="card-img-top" alt="Event 4">
                         <div class="card-body">
                             <h5 class="card-title"><b>Roll Ball Classes</b></h5>
                             <p class="card-text">Roll Ball is a game played between two teams and is a unique combination of roller skates, basketball, handball, and throwball. It is played on "roller shoes" with each team consisting of twelve players, six on the field, and six in reserve.</p>
@@ -744,7 +778,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card event-card mb-4">
-                        <img src="assets/cummnaity.jpeg" class="card-img-top" alt="Event 6">
+                        <img src="assets/class 2.png" class="card-img-top" alt="Event 6">
                         <div class="card-body">
                             <h5 class="card-title"><b>Community Skating Parade</b></h5>
                             <p class="card-text">Join our community for a vibrant skating parade through the park. All
@@ -755,6 +789,94 @@
             </div>
         </div>
     </div>
+
+    <div id="instructors" class="section">
+        <div class="container" style="margin-top: 107px;">
+            <h2 class="text-center">Meet Our Instructors</h2>
+            <div class="fixed-header text-center">
+                <img src="assets/imran.jpeg" class="head-img" alt="Instructor head">
+                <h3>Head of Instructors: Imran Khan</h3>
+            </div>
+            <div id="instructorCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-md-4 d-flex justify-content-center">
+                                <div class="card mb-4 text-center">
+                                    <img src="assets/imran.jpeg" class="card-img-top instructor-img" alt="Instructor 1 - Skating Expert">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Instructor 1</h5>
+                                        <p class="card-text">Skating Expert</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 d-flex justify-content-center">
+                                <div class="card mb-4 text-center">
+                                    <img src="assets/imran.jpeg" class="card-img-top instructor-img" alt="Instructor 2 - Freestyle Skating">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Instructor 2</h5>
+                                        <p class="card-text">Freestyle Skating</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 d-flex justify-content-center">
+                                <div class="card mb-4 text-center">
+                                    <img src="assets/imran.jpeg" class="card-img-top instructor-img" alt="Instructor 3 - Hockey Skating">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Instructor 3</h5>
+                                        <p class="card-text">Hockey Skating</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-md-4 d-flex justify-content-center">
+                                <div class="card mb-4 text-center">
+                                    <img src="assets/imran.jpeg" class="card-img-top instructor-img" alt="Instructor 4 - Speed Skating">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Instructor 4</h5>
+                                        <p class="card-text">Speed Skating</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 d-flex justify-content-center">
+                                <div class="card mb-4 text-center">
+                                    <img src="assets/imran.jpeg" class="card-img-top instructor-img" alt="Instructor 5 - Artistic Skating">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Instructor 5</h5>
+                                        <p class="card-text">Artistic Skating</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 d-flex justify-content-center">
+                                <div class="card mb-4 text-center">
+                                    <img src="assets/imran.jpeg" class="card-img-top instructor-img" alt="Instructor 6 - Beginner Training">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Instructor 6</h5>
+                                        <p class="card-text">Beginner Training</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more carousel items as needed -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#instructorCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#instructorCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+
     <!-- Shoes Selling Section -->
     <div id="shoes" class="section">
         <div class="container">
@@ -778,16 +900,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-4">
-                    <div class="card event-card mb-4">
-                        <img src="assets/skits 3.png" class="card-img-top" alt="Event 3">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Family Skating Day</b></h5>
-                            <p class="card-text">A fun-filled day for the whole family with games, activities, and
-                                skating <br>sessions.</p>
-                        </div>
-                    </div>
-                </div> -->
+              
                 <div class="col-md-4">
                     <div class="card event-card mb-4">
                         <img src="assets/safety.jpeg" class="card-img-top" alt="Skating Event 4">
@@ -807,16 +920,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-4">
-                    <div class="card event-card mb-4">
-                        <img src="assets/skits 6.png" class="card-img-top" alt="Skating Event 6">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Kids Skating Party</b></h5>
-                            <p class="card-text">A special skating party designed for kids with lots of fun activities
-                                and games!</p>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
